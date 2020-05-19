@@ -48,13 +48,20 @@ For the social icons, you can use a font icon library. Some suggestions can be f
     box-sizing: border-box;
 }
 
+body, 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 body {
     width: 100vw;
     height: 100vh;
     background-color: hsl(257, 40%, 49%);
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
-    padding: 65px 80px;
+    padding: 65px 80px 15px 80px;
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -82,22 +89,32 @@ header {
 
 main {
     display: flex;
+    justify-content: space-evenly;
+}
+
+.illustration,
+.text {
+    width: 50vw;
 }
 
 .illustration {
-    margin-right: 60px;
+    max-width: 755px;
+    margin-right: 59px;
+}
+
+.illustration img {
+    width: 100%;
+    height: 100%;
 }
 
 .text {
     padding-top: 45px;
+    max-width: 520px;
 }
 
-.text h1 {
-    
-    margin-bottom: 24px;
-}
-
+.text h1,
 .text p {
+    
     margin-bottom: 24px;
 }
 
@@ -113,6 +130,10 @@ main {
     FOOTER
 ******************/
 
+footer {
+    margin-top: 27px;
+}
+
 .social-links {
     text-align: right;
 }
@@ -120,6 +141,7 @@ main {
 .social-links ul li {
     display: inline-block;
     list-style-type: none;
+    margin-left: 16px;
 }
 
 .attribution { font-size: 11px; text-align: center; }

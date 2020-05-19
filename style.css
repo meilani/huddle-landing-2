@@ -80,7 +80,11 @@ h1, h2, h3, h4, h5, h6 {
 ******************/
 
 header {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
+}
+
+header img {
+    width: 200px;
 }
 
 /******************
@@ -152,8 +156,68 @@ footer {
     MEDIA QUERIES
 ******************/
 
+@media (max-width: 1105px) {
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    main {
+        align-items: center;
+    }
+    h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .illustration img {
+        height: auto;
+    }
+}
 
+@media (max-width: 850px) {
+    body {
+        padding: 38px 36px 15px 36px;
+    }
+    header {
+        margin-bottom: 50px;
+    }
+    main {
+        flex-direction: column;
+    }
+    .illustration,
+    .text {
+        width: 85%;
+    }
+    .illustration {
+        max-width: 500px;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+    .text {
+        text-align: center;
+        margin-bottom: 60px;
+        padding-top: 0;
+    }
+    .text h1 {
+        margin-bottom: 16px;
+    }
+    .button {
+        margin: auto;
+        padding: 12px 75px;
+        width: 200px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .social-links {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
 
+@media (max-width: 500px) {
+    header img {
+        width: 120px;
+    }
+}
 
 
 

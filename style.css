@@ -75,6 +75,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+a {
+    text-decoration: none;
+}
+
 /******************
     HEADER
 ******************/
@@ -116,10 +120,13 @@ main {
     max-width: 520px;
 }
 
-.text h1,
-.text p {
+.text h1 {
     
     margin-bottom: 24px;
+}
+
+.text p {
+    margin-bottom: 40px;
 }
 
 .button {
